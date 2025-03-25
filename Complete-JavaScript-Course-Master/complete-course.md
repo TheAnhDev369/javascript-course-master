@@ -1,1 +1,1 @@
-Summary Of JavaScriptConcepts
+Complete Javascript Course Master
