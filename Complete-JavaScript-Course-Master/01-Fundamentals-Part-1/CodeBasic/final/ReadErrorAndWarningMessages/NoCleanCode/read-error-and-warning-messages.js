@@ -34,7 +34,7 @@ console.log(h);
 //  -   Uncaught ReferenceError: h is not defined
 //      at <anonymous>:1:13
 //  -   Lỗi tham chiếu xảy ra khi biến chưa được khai báo hay định nghĩa trước khi sử dụng.
-//  -   Lỗi này xảy ra vì nó đang tìm kiếm 1 biến không tồn tại hoặc chưa định nghĩa, nếu ta định nghĩa trước console.log(h) sẽ hết lỗi
+//  -   Lỗi này xảy ra vì nó đang tìm kiếm 1 biến không tồn tại hoặc chưa định nghĩa, nếu ta định nghĩa trước console.log(h) sẽ hết lỗi.
 //  -   Nhớ là sau console.log() và gọi là định nghĩa trước rồi mới sử dụng biến đã khai báo trước đo, vì JS chạy từ trên xuống dưới.
 //  -   Vì JS chạy từ trên xuống dưới nên nếu thằng trên sai là thằng dưới không chạy được.
 /**
@@ -43,3 +43,21 @@ console.log(h);
  * Lỗi xảy ra trong một đoạn mã không có tên hàm, thường là trong console hoặc một script không đặt tên.
     :1:13: Lỗi xảy ra ở dòng 1, cột 13 của mã nguồn.
  */
+
+//    Ví dụ 5:
+//    Uncaught ReferenceError: teacher is not defined
+//    at string-and-template-literals.js:71:55
+//    Tương tự ví dụ 4
+
+//    Ví dụ 6:
+// Uncaught ReferenceError: century is not defined
+// at if-else-statements.js:140:13
+// -   Lỗi này xảy ra vì nó đang tìm kiếm 1 biến không tồn tại hoặc chưa định nghĩa, hoặc do phạm vi truy cập của biến đó.
+// if (birthYear3 <= 2000) {
+//    let century = 20;
+//    }
+
+// else {
+//    let century = 21;
+// }
+// console.log(century);
