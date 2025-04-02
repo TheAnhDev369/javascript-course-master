@@ -1,3 +1,8 @@
+/**
+ * Trong JavaScript, typeof là một toán tử dùng để
+ * kiểm tra kiểu dữ liệu của một biến hoặc giá trị.
+ * Nó trả về một chuỗi (string) biểu thị kiểu dữ liệu của toán hạng.
+ */
 // Ví dụ
 console.log(typeof 42); // "number"
 console.log(typeof "Hello"); // "string"
