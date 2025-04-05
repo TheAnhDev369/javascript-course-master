@@ -163,19 +163,15 @@ if (favouriteNumber3 === 21) {
 //  Nếu hai giá trị giống nhau sau khi ép kiểu
 //  => Trả về False
 
-const favouriteNumber5 = prompt("Difference number: ");
+const favouriteNumber5 = Number(prompt("Difference number: "));
 
-if (favouriteNumber5 !== "5") {
+if (favouriteNumber5 !== 5 && favouriteNumber5 !== 6) {
+  console.log("Number 7 is the correct result");
+} else if (favouriteNumber5 !== 5) {
   console.log("Why not 5?");
-} else if (favouriteNumber5 !== "6") {
-  console.log("Why not 6");
 } else {
-  console.log("Why not 100");
+  console.log("Why not 6?");
 }
-
-// if (favouriteNumber5 != 5) {
-//   console.log("Why not 24?");
-// }
 
 //  Kết luận:
 //  Dù là so sánh bình đẳng hay so sánh khác, hãy luôn sử dụng so sánh nghiêm ngặt.

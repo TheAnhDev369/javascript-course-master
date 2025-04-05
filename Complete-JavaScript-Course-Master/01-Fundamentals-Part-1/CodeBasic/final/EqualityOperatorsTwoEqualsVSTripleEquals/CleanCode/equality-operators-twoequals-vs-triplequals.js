@@ -56,12 +56,12 @@ if (favouriteNumber7 != 6) {
 }
 
 //  Ví dụ 8:
-const favouriteNumber8 = prompt("Difference number: ");
+const favouriteNumber8 = Number(prompt("Difference number: "));
 
-if (favouriteNumber5 !== 5) {
-  console.log("Why not 5?");
-} else if (favouriteNumber5 !== "6") {
-  console.log("Why not 6");
+if (favouriteNumber8 !== 5 && favouriteNumber5 !== 6) {
+  console.log("Number 7 is the correct result");
+} else if (favouriteNumber5 !== 5) {
+  console.log("You skipped 5? That's illegal 😆");
 } else {
-  console.log("Why not 100");
+  console.log("No love for 6?");
 }
