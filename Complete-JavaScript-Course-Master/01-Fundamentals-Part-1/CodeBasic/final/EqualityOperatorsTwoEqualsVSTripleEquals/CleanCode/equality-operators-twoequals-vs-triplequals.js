@@ -58,7 +58,7 @@ if (favouriteNumber7 != 6) {
 //  Ví dụ 8:
 const favouriteNumber8 = Number(prompt("Difference number: "));
 
-if (favouriteNumber8 !== 5 && favouriteNumber5 !== 6) {
+if (favouriteNumber8 !== 5 && favouriteNumber8 !== 6) {
   console.log("Number 7 is the correct result");
 } else if (favouriteNumber5 !== 5) {
   console.log("You skipped 5? That's illegal 😆");

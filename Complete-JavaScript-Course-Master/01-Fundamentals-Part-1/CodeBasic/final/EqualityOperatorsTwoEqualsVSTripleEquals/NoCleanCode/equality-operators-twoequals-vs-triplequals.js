@@ -114,9 +114,9 @@ if (favouriteNumber2 === 9) {
  *  Thì khi ta nhập vào prompt số 9, thay vì chuỗi 9 thì ta có số 9, và đem so sánh kiểu dữ liệu, cả 2 số ở prompt và điều kiện cùng type => True.
  *  Tiếp đó so sánh dữ liệu cả 2 đều = 9 => True => log ra khối if.
  */
+
 //  Ví dụ 3:
 //  Ngoài if-else, ta cũng có thể sử dụng if-elseif
-
 const favouriteNumber3 = Number(prompt("What is your favourite number ?"));
 if (favouriteNumber3 === 21) {
   console.log("Cool! 21 is an amazing number");
@@ -131,46 +131,68 @@ if (favouriteNumber3 === 21) {
 //  Nếu không thì sẽ chuyển đến khối tiếp theo là else if (cái khác), nếu cái khác mà đúng thì log ra
 //  Nếu tất cả các cái khác mà không cái nào đúng, thì log ra else(ngược lại) cuối cùng.
 
-//  Chúng ta cũng có đã 1 cách mới để kiểm tra điều kiện theo thứ tự:
-//  Đầu tiên, kiểm tra điều kiện trong if,
-//  Nếu đk đúng, chương trình sẽ log ra thông báo.
-//  Nếu đk sai, chương trình sẽ không nhảy ngay vào khối else để kết luận,
-//  mà sẽ nhảy vào kiểm tra lần lượt điều kiện khối else if từ đầu tiên đến cuối cùng theo thứ tự.
-//  Nếu một điều kiện trong else if sai, chương trình sẽ kiểm tra các điều kiện tiếp theo lần lượt.
-// (elseif 1 sai sẽ nhảy sang kiểm tra elseif 2, 2 sai thì sang 3 cho đến khi tìm thấy else nào có điều kiện đúng)
-//  Chỉ khi tất cả các điều kiện trong if và else if đều sai, thì chương trình mới vào khối else cuối để kết luận.
-
-//  Nếu kiểm tra điều kiện của biến favouriteNumber3 trong if
-//  Ta nhập vào prompt số 21 và 9 lần lượt chẳng hạn,
-//  điều kiện đầu tiên của if là đúng(21) => log ra, không nhảy vào else if hay else.
-//  Và nếu điều kiện sai, số 9 chẳng hạn, chương trình sẽ không nhảy vào khối else kết luận luôn,
-//  mà sẽ kiểm tra lần lượt các điều kiện else if từ đầu đến cuối, với else if 1 sai do 21 === 9 => False
-//  Tiếp đó là 7 == 9 => False, và đến else if cuối, 9 === 9 => True => log ra `9 is absolute cool number`.
-//  Nếu ta nhập vào prompt số 90, chạy qua if và else đều sai => Chương trình nhảy vào else kết luận và log ra `Number is not 21 or 7 or 9`.
-
+/**
+ * Chúng ta cũng có đã 1 cách mới để kiểm tra điều kiện theo thứ tự:
+ * Đầu tiên, kiểm tra điều kiện trong if,
+ * Nếu đk đúng, chương trình sẽ log ra thông báo.
+ * Nếu đk sai, chương trình sẽ không nhảy ngay vào khối else để kết luận,
+ * mà sẽ nhảy vào kiểm tra lần lượt điều kiện khối else if từ đầu tiên đến cuối cùng theo thứ tự.
+ * Nếu một điều kiện trong else if sai, chương trình sẽ kiểm tra các điều kiện tiếp theo lần lượt.
+ * (elseif 1 sai sẽ nhảy sang kiểm tra elseif 2, 2 sai thì sang 3 cho đến khi tìm thấy else nào có điều kiện đúng)
+ * Chỉ khi tất cả các điều kiện trong if và else if đều sai, thì chương trình mới vào khối else cuối để kết luận.
+ */
+/**
+ * Nếu kiểm tra điều kiện của biến favouriteNumber3 trong if.
+ * Ta nhập vào prompt số 21 và 9 lần lượt chẳng hạn,
+ * điều kiện đầu tiên của if là đúng(21) => log ra, không nhảy vào else if hay else.
+ * Và nếu điều kiện sai, số 9 chẳng hạn, chương trình sẽ không nhảy vào khối else kết luận luôn,
+ * mà sẽ kiểm tra lần lượt các điều kiện else if từ đầu đến cuối, với else if 1 sai do 21 === 9 => False
+ * Tiếp đó là 7 == 9 => False, và đến else if cuối, 9 === 9 => True => log ra `9 is absolute cool number`.
+ * Nếu ta nhập vào prompt số 90, chạy qua if và else đều sai
+ * => Chương trình nhảy vào else kết luận và log ra `Number is not 21 or 7 or 9`.
+ */
 //  Ta đã được học về toán tử so sánh bình đẳng, tất nhiên ngược lại cũng có toán tử so sánh khác(diffirence operators).
-//  Ví dụ 5:
-//  Với !== là so sánh khác nghiêm ngặt (strict inequality).
-//  Nếu khác về cả giá trị và kiểu khi so sánh trực tiếp
-// => Trả về True
-//  Nếu khác về kiểu nhưng giống nhau về giá trị => True
-//  Nếu giống nhau về kiểu dữ liệu và giá trị    => Trả về => false
 
-//  Và != là so sánh khác lỏng lẻo (loose inequality).
-//  Sẽ thực hiện ép kiểu trước khi so sánh.
-//  Nếu hai giá trị khác nhau sau khi ép kiểu.
-//  =>  Trả về True
-//  Nếu hai giá trị giống nhau sau khi ép kiểu
-//  => Trả về False
+//  Ví dụ 4:
+/**
+ *  Với !== là so sánh khác nghiêm ngặt (strict inequality).
+ *  Nếu khác về cả giá trị và kiểu khi so sánh trực tiếp
+ *  =>  Trả về True
+ *  Nếu khác về kiểu nhưng giống nhau về giá trị
+ *  =>  Trả về True
+ *  Nếu giống nhau về kiểu dữ liệu và giá trị
+ *  =>  Trả về False
+ *  =>  Tóm lại, chỉ False khi giống nhau cả kiểu và dữ liệu, còn lại là True
+ *
+ *  Và != là so sánh khác lỏng lẻo (loose inequality).
+ *  Sẽ thực hiện ép kiểu trước khi so sánh.
+ *  Nếu hai giá trị khác nhau sau khi ép kiểu.
+ *  Trả về  => True
+ *  Nếu hai giá trị giống nhau sau khi ép kiểu
+ *  Trả về  => False
+ */
 
+//  ChatGPT
 const favouriteNumber5 = Number(prompt("Difference number: "));
-
 if (favouriteNumber5 !== 5 && favouriteNumber5 !== 6) {
   console.log("Number 7 is the correct result");
 } else if (favouriteNumber5 !== 5) {
   console.log("Why not 5?");
 } else {
   console.log("Why not 6?");
+}
+
+//  Ví dụ 5:
+//  Tìm số không phải 100 (khác 100)
+const favouriteNumber4 = prompt(
+  "Nhập vào số khác với 100, nếu không phải số 100 thì đúng"
+);
+// console.log(favouriteNumber4);//  Chuỗi
+if (favouriteNumber4 !== "100") {
+  // Nhập vào prompt thì auto '100' => True => Log if
+  console.log("Chúc mừng, bạn đã nhập vào 1 số khác với 100");
+} else {
+  console.log("Bạn đã nhập vào số 100 => Sai");
 }
 
 //  Kết luận:
