@@ -18,3 +18,59 @@ true && true; // true
 true && false; // false
 false && false; // false
 ```
+
+\*\* Tổng quát:
+
+true && true && true → true
+
+true && false && true → false
+
+#### 2. Toán tử OR (|| - HOẶC)
+
+- Trả về true nếu ít nhất một điều kiện đúng.
+
+- Chỉ trả về false nếu tất cả các điều kiện đều sai.
+
+**Ví dụ:**
+
+```js
+true || false; // true
+false || false; // false
+false || true; // true
+```
+
+\*\* Tổng quát:
+
+false || false || true → true
+
+false || false || false → false
+
+#### 3. Toán tử NOT (! - PHỦ ĐỊNH)
+
+- Đảo ngược giá trị của một biểu thức Boolean.
+
+- Nếu là true sẽ trở thành false, và ngược lại.
+
+```js
+!true; // false
+!false; // true
+```
+
+## Phân tích các tổ hợp logic:
+
+### Phân tích kết quả
+
+| Biểu thức | Giải thích                              | Kết quả |
+| --------- | --------------------------------------- | ------- | ------ | --- | -------------- | ----- |
+| `!A`      | Phủ định A: `!false` → `true`           | true    |
+| `A && B`  | `false && true` → false (một sai → sai) | false   |
+| `!A && B` | `true && true` → true                   | true    |
+| `A        |                                         | !B`     | `false |     | false` → false | false |
+
+=> Ghi nhớ:
+
+- AND cần tất cả đều đúng → true
+
+- OR chỉ cần một đúng → true
+
+- NOT chỉ đảo ngược giá trị
