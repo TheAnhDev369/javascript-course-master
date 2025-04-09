@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Fundamentals - Part 1</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to top left, #28b487, #7dd56f);
+      }
+      h1 {
+        font-family: "JetBrainsMono Nerd Font";
+        font-size: 50px;
+        line-height: 1.3;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+      h3 {
+        font-family: "JetBrainsMono Nerd Font";
+        font-size: 20px;
+        line-height: 1.3;
+        width: 50%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+    <script>
+      //  Khi nhúng JS vào html, ta có 2 cách chính, cách 1 chính là:
+      //  Nhúng nội bộ (Internal JS):  Viết trực tiếp vào trong files HTML
+      //  Nhúng bên ngoài (External JS):  Tạo file js riêng và liên kết vào thẻ HTML
+
+      //  Ta đang dùng cách 1
+      //  Ví dụ:
+
+      //   let js = "amazing";
+      let js = "boring";
+      //  Sử dụng hàm cơ bản nhất của js là alert để hiển thị 1 hộp thoại thông báo (popup) cho người dùng
+      //  Thường dùng để kiểm tra nhanh dữ liệu, debug đơn giản hoặc báo thông tin.
+      if (js === "amazing") alert("JavaScript is verry FUN!");
+      //   40 + 8 + 23 - 10;
+      // Sử dụng hàm console(bảng điều khiển hay giao diện dòng lệnh) truy cập đến log (nhật ký) để hiển thị
+      console.log(40 + 8 + 23 - 10);
+    </script>
+  </head>
+  <body>
+    <h1>JavaScript Fundamentals - Part 1.1</h1>
+    <h3>
+      Do ta ở trong tập lệnh và không còn bảng điều khiển nữa Nên sử dụng
+      console.log bất cứ khi nào chúng ta muốn truy cập bảng điều khiển dành cho
+      nhà phát triển.
+    </h3>
+  </body>
+</html>
