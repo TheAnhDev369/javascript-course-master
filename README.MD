@@ -1,2 +1,2 @@
 ##  JavaScript By Jonas Schmedmann
-##  Learn Course With Me And Support By ChatGPT
+###  Learn Course With Me And Support By ChatGPT
