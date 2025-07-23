@@ -1,0 +1,1 @@
+#   All Exercises JavaScript 
